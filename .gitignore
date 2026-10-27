@@ -1,0 +1,15 @@
+# Godot 4
+.godot/
+
+# Imported assets and editor files
+*.import
+
+# Mono/C# build artifacts
+.mono/
+data_*/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
