@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene format=3 uid="uid://cggghifcojb6y"]
 
-[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="Script" uid="uid://bgyuay8u3tyvn" path="res://scripts/main.gd" id="1_main"]
+[ext_resource type="PackedScene" uid="uid://ceq7f6ak4n31d" path="res://scenes/HUD.tscn" id="2_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://mxpns6jp0xnb" path="res://scenes/world/World.tscn" id="3_tbgi4"]
+[ext_resource type="PackedScene" uid="uid://ccx4ab7nm4eaj" path="res://scenes/player/Player.tscn" id="4_tefeu"]
 
-[node name="Main" type="Control"]
+[node name="Main" type="Control" unique_id=1592612055]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,3 +13,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_main")
+
+[node name="Player" parent="." unique_id=62108628 instance=ExtResource("4_tefeu")]
+position = Vector2(118, 218)
+slide_on_ceiling = false
+
+[node name="Hud" parent="." unique_id=1272049207 instance=ExtResource("2_jyhfs")]
+
+[node name="World" parent="." unique_id=1335712876 instance=ExtResource("3_tbgi4")]

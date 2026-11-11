@@ -1,15 +1,28 @@
-# Godot 4
+# Godot generated files and cache
 .godot/
+.import/
 
-# Imported assets and editor files
-*.import
+# Exported builds
+.export/
+build/
+dist/
 
-# Mono/C# build artifacts
-.mono/
-data_*/
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.log
 
-# IDE and OS files
-.vscode/
-.idea/
+# Operating system files
 .DS_Store
 Thumbs.db
+Desktop.ini
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Backup files
+*~
+*.orig
+*.old

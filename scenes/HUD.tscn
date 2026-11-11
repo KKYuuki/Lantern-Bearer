@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://ceq7f6ak4n31d"]
+
+[ext_resource type="Script" uid="uid://dmtmp6cjkruii" path="res://scripts/ui/Hearts.gd" id="1_1etfg"]
+[ext_resource type="Texture2D" uid="uid://vu85svao7di6" path="res://assets/player/heart/16x16 Heart Health Red.png" id="2_fls4u"]
+[ext_resource type="Script" uid="uid://ba3dqwkoyxvvd" path="res://scripts/systems/LanternBar.gd" id="3_1etfg"]
+[ext_resource type="Script" uid="uid://vbli1lgxaedu" path="res://scripts/ui/InteractionPrompt.gd" id="4_7hsmw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tpg5x"]
+atlas = ExtResource("2_fls4u")
+region = Rect2(0, 0, 16, 16)
+
+[node name="Hud" type="CanvasLayer" unique_id=1272049207]
+
+[node name="HealthDisplay" type="Control" parent="." unique_id=1897511987]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 10.0
+offset_right = 14.0
+offset_bottom = 27.0
+script = ExtResource("1_1etfg")
+full_heart = SubResource("AtlasTexture_tpg5x")
+half_heart = ExtResource("2_fls4u")
+empty_heart = ExtResource("2_fls4u")
+heart_size = Vector2(64, 64)
+
+[node name="HeartsContainer" type="HBoxContainer" parent="HealthDisplay" unique_id=1661504858]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LanternBar" type="ProgressBar" parent="." unique_id=2016890613]
+offset_left = 16.0
+offset_top = 60.0
+offset_right = 66.0
+offset_bottom = 87.0
+script = ExtResource("3_1etfg")
+
+[node name="InteractionPrompt" type="Label" parent="." unique_id=354388224]
+offset_left = 10.0
+offset_right = 50.0
+offset_bottom = 23.0
+text = "E - Interact"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_7hsmw")

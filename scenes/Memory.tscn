@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cnhdkbgcr75r7"]
+
+[ext_resource type="Script" uid="uid://byefcfp2p14f6" path="res://resources/memories/Memory.gd" id="1_qvcj8"]
+
+[node name="Memory" type="Area2D" unique_id=576769321]
+script = ExtResource("1_qvcj8")
+interaction_name = "Collect Memory"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=29778559]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1221599684]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

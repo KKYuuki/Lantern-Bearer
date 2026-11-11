@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cil570wi8x3ax"]
+
+[ext_resource type="Script" uid="uid://ck0jc5dgp5pfa" path="res://scripts/systems/HealthComponent.gd" id="1_hpe7p"]
+
+[node name="Enemy" type="CharacterBody2D" unique_id=1254066178]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1554638002]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=115216582]
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1898452424]
+script = ExtResource("1_hpe7p")
+metadata/_custom_type_script = "uid://ck0jc5dgp5pfa"

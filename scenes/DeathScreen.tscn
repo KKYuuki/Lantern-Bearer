@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://chm1r255uschq"]
+
+[node name="DeathScreen" type="Control" unique_id=169316707]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Panel" type="Panel" parent="." unique_id=1025758224]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1735988153]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer" unique_id=194773493]
+layout_mode = 2
+
+[node name="Restart" type="Button" parent="Panel/VBoxContainer" unique_id=484402304]
+layout_mode = 2
