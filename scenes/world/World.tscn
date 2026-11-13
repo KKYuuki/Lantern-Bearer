@@ -1,3 +1,53 @@
 [gd_scene format=3 uid="uid://mxpns6jp0xnb"]
 
+[ext_resource type="Texture2D" uid="uid://cug6aak3tx3qb" path="res://assets/environment/terrain/tileset.png" id="1_5qbjp"]
+[ext_resource type="PackedScene" uid="uid://boiqf3jevndkl" path="res://scenes/world/Tree.tscn" id="2_gbddb"]
+[ext_resource type="Texture2D" uid="uid://be7wftixmsltc" path="res://assets/environment/decorations/rock.png" id="3_qxiha"]
+[ext_resource type="Texture2D" uid="uid://vyvgidoiwx5w" path="res://assets/environment/decorations/mushrooms.png" id="4_i1jm3"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1oml7"]
+texture = ExtResource("1_5qbjp")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_emg6i"]
+sources/0 = SubResource("TileSetAtlasSource_1oml7")
+
 [node name="World" type="Node2D" unique_id=1335712876]
+y_sort_enabled = true
+
+[node name="GroundLayer" type="TileMapLayer" parent="." unique_id=967513487]
+tile_set = SubResource("TileSet_emg6i")
+
+[node name="Floor" type="ColorRect" parent="." unique_id=309525544]
+z_index = -10
+offset_right = 640.0
+offset_bottom = 360.0
+color = Color(0.11372549, 0.101960786, 0.14901961, 1)
+
+[node name="Tree" parent="." unique_id=686159261 instance=ExtResource("2_gbddb")]
+position = Vector2(556, 281)
+
+[node name="Tree2" parent="." unique_id=1026134200 instance=ExtResource("2_gbddb")]
+position = Vector2(180, 218)
+
+[node name="Rock" type="Sprite2D" parent="." unique_id=659074573]
+position = Vector2(448, 276)
+texture = ExtResource("3_qxiha")
+
+[node name="Mushrooms" type="Sprite2D" parent="." unique_id=115018931]
+position = Vector2(365, 307)
+texture = ExtResource("4_i1jm3")

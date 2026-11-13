@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://ccx4ab7nm4eaj" path="res://scenes/player/Player.tscn" id="4_tefeu"]
 
 [node name="Main" type="Control" unique_id=1592612055]
+y_sort_enabled = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

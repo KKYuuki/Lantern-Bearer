@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://boiqf3jevndkl"]
+
+[ext_resource type="Texture2D" uid="uid://txlkgir3g3uo" path="res://assets/environment/decorations/tree.png" id="1_1bypa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_emg6i"]
+size = Vector2(12, 8)
+
+[node name="Tree" type="Sprite2D" unique_id=686159261]
+texture = ExtResource("1_1bypa")
+offset = Vector2(0, -28)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=218509083]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=675504401]
+shape = SubResource("RectangleShape2D_emg6i")
