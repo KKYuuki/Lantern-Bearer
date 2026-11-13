@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ccx4ab7nm4eaj"]
 
 [ext_resource type="Script" uid="uid://c065j81diuqw4" path="res://scripts/player/Player.gd" id="1_wr5hl"]
-[ext_resource type="Texture2D" uid="uid://ck17lh0geimlf" path="res://scenes/player/Warrior_Idle_1.png" id="2_gfjak"]
+[ext_resource type="Texture2D" uid="uid://b1nh4q4swqe33" path="res://assets/characters/player/character_sheet.png" id="2_tpg5x"]
 [ext_resource type="Script" uid="uid://ck0jc5dgp5pfa" path="res://scripts/systems/HealthComponent.gd" id="3_4kuee"]
 [ext_resource type="Script" uid="uid://benk8jvfhnhta" path="res://scripts/systems/LanternComponent.gd" id="4_524rm"]
 [ext_resource type="Script" uid="uid://bk4mxvu53s8jw" path="res://scripts/systems/InteractionManager.gd" id="5_tpg5x"]
@@ -21,7 +21,9 @@ up_direction = Vector2(0.066386566, 0.99779403)
 script = ExtResource("1_wr5hl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=314935399]
-texture = ExtResource("2_gfjak")
+texture = ExtResource("2_tpg5x")
+hframes = 4
+vframes = 6
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1580165734]
 shape = SubResource("RectangleShape2D_o8nba")
